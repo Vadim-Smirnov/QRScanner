@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QR Scanner</string>
+    <string name="edit_text_content_hint">Content</string>
+    <string name="code_color_text">Code color:</string>
+    <string name="background_color_text">Background color:</string>
+    <string name="button_generate_code_text">Generate QR code</string>
+    <string name="button_scan_qr_code_text">Scan QR code</string>
+    <string name="edit_text_decode_content_hint">Decode content</string>
+    <string name="field_required">This field required</string>
+</resources>

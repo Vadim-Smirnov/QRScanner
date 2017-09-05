@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_horizontal_margin"
+    tools:context="com.vadim_smirnov.qrscanner.ui.activities.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_content_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_view_code_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/code_color_text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/image_button_code_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_button_code_color"/>
+
+    <ImageButton
+        android:id="@+id/image_button_code_color"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/layout_margin_between_views"
+        android:layout_marginTop="@dimen/layout_margin_between_views"
+        android:background="@drawable/button_border"
+        app:layout_constraintStart_toEndOf="@+id/text_view_code_color"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_content"/>
+
+    <TextView
+        android:id="@+id/text_view_background_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_between_views"
+        android:text="@string/background_color_text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_button_code_color"
+        app:layout_constraintStart_toEndOf="@id/image_button_code_color"
+        app:layout_constraintTop_toTopOf="@+id/image_button_code_color"/>
+
+    <ImageButton
+        android:id="@+id/image_button_background_color"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/layout_margin_between_views"
+        android:layout_marginTop="@dimen/layout_margin_between_views"
+        android:background="@drawable/button_border"
+        app:layout_constraintStart_toEndOf="@+id/text_view_background_color"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_content"/>
+
+    <Button
+        android:id="@+id/button_generate_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_between_views"
+        android:text="@string/button_generate_code_text"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_background_color"/>
+
+    <Button
+        android:id="@+id/button_scan_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_between_views"
+        android:text="@string/button_scan_qr_code_text"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_generate_code"/>
+
+    <EditText
+        android:id="@+id/edit_text_decode_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_text_decode_content_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_scan_code"
+        android:layout_marginTop="@dimen/layout_margin_between_views"/>
+
+
+</android.support.constraint.ConstraintLayout>
